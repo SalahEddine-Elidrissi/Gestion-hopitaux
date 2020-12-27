@@ -4,5 +4,6 @@ public class medecin {
 	private String Salah;
 	private String meryem;
 	private String knza;
+	private String id;
 
 }
