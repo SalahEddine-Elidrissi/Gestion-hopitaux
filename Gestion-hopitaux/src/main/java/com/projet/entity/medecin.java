@@ -2,6 +2,6 @@ package com.projet.entity;
 
 public class medecin {
 	private String Salah;
-	private String meryem12;
+	private String meryem17;
 
 }
