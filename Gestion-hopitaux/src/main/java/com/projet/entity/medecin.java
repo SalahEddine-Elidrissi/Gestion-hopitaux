@@ -3,6 +3,6 @@ package com.projet.entity;
 public class medecin {
 	private String Salah;
 	private String meryem;
-	private String Salah1;
+	private String Salah6;
 
 }
