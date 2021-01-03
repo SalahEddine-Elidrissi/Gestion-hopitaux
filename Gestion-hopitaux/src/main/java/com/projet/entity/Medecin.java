@@ -10,7 +10,7 @@ public class Medecin extends Person {
 
 	public Medecin(String specialite) {
 		super();
-		this.specialite = specialite;
+		this.specialite = specialite;;
 	}
 
 	public String getSpecialite() {

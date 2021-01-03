@@ -12,7 +12,7 @@ public class Patient extends Person {
 	public Patient(String dateNai, String sexe) {
 		super();
 		this.dateNai = dateNai;
-		this.sexe = sexe;
+		this.sexe = sexe;;
 	}
 
 	public String getDateNai() {
