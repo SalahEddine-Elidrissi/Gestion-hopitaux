@@ -1,9 +1,6 @@
 package com.example.gestionhopiteaux.modele;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -11,9 +8,15 @@ public class Rendezvous {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public  int id;
-
     public Date dater;
     public  String  heure;
+    @ManyToOne
+    @JoinColumn(name = "patient_id",nullable = false)
+    private Patient patient;
+    @ManyToOne
+    @JoinColumn(name = "service_id",nullable = false)
+    private Service service;
+
 
     public Rendezvous(int id, Date dater, String heure) {
         this.id = id;

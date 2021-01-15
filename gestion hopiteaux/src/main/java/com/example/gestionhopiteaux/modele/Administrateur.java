@@ -12,8 +12,10 @@ public class Administrateur extends Personne {
     public Administrateur() {
     }
 
+
     public Administrateur(int id, String nom, String prenom, String tel, String adresse, String email, String motdepasse) {
         super(id, nom, prenom, tel, adresse, email, motdepasse);
     }
+
 
 }

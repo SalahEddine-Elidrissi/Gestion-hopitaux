@@ -2,12 +2,17 @@ package com.example.gestionhopiteaux.modele;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 //@DiscriminatorValue("P")
 public class Patient extends Personne {
     public String datenaissance;
     public String sexe_patient;
+    @OneToMany(fetch = FetchType.LAZY,mappedBy ="patient")
+    private List<Rendezvous> rendezvous;
 
     public Patient() {
 
